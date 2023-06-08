@@ -1,0 +1,22 @@
+name=input("Enter your name: ")
+
+#Check if the name contains space
+def check_space():
+    if ' ' in name:
+        print("Your name contains a space")
+    else:
+        print("Your name does not contain a space")
+        
+#Check if the name contains any digits
+def check_digit(): 
+    if any(char.isdigit() for char in name):
+        print("Your name contains a digit")
+    else:
+        print("Your name does not contain a digit")
+
+print("The length of the inputted name is",len(name))
+print("The Letter U is on index",name.find("u"))
+print(name)
+print("Name:",name.upper())
+check_space()
+check_digit()
